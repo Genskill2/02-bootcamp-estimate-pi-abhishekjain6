@@ -7,7 +7,7 @@ def wallis(n):
     pi=1
     for x in range(1,n):
         pi*=(4*x**2)/(4*x**2-1)
-    print(pi*2)
+    return(pi*2)
 
 
 def monte_carlo(n):
@@ -19,7 +19,7 @@ def monte_carlo(n):
         if d<=1:
             c+=1
         s+=1
-    print(4*c/s)
+    return(4*c/s)
 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
